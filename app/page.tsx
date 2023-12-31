@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { Lusitana, Open_Sans } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import Galery from "./ui/galery";
+import LeadsProfile from "./ui/leads";
 
-const lusitana = Lusitana({ weight: ["400", "700"], subsets: ["latin"] });
 const openSans = Open_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
 export default function Home() {
@@ -33,10 +33,27 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="justify-center items-center pb-10 space-y-8 bg-slate-300">
+      <div className="justify-center items-center pb-32 space-y-8 bg-slate-300">
         <h2 className="text-2xl font-bold text-center">Galery</h2>
         <Galery />
       </div>
+
+      <div>
+        <h2 className="text-2xl font-bold text-center">Roundown</h2>
+      </div>
+
+      <div className="py-32">
+        <h2 className="text-2xl font-bold text-center">Leads Profile</h2>
+        <p className="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          voluptates.
+        </p>
+        <LeadsProfile />
+      </div>
+
+      <footer className="bg-neutral-300 flex justify-center py-3">
+        <p>© 2021 ACE</p>
+      </footer>
     </main>
   );
 }
