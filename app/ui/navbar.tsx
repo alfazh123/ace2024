@@ -21,7 +21,7 @@ const data = [
 
 export default function Navbar() {
   return (
-    <nav className="bg-neutral-300 flex justify-around py-3">
+    <nav className="bg-neutral-300 flex justify-between px-20 py-3">
       <Image
         src="/next.svg"
         alt="Next.js Logo"
@@ -29,7 +29,7 @@ export default function Navbar() {
         height={37}
         priority
       />
-      <div className="flex space-x-5 text-slate-900">
+      <div className="flex items-center space-x-5 text-slate-900">
         {data.map((item) => (
           <Link href={item.href} key={item.name}>
             <p>{item.name}</p>
