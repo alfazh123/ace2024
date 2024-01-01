@@ -10,7 +10,7 @@ interface DataCard {
 
 export default function AgendaCard(agenda: DataCard) {
   return (
-    <div className="bg-slate-300 rounded-lg shadow-lg">
+    <div className="rounded-lg shadow-lg hover:shadow-base-content  bg-slate-200">
       <Link href={agenda.href}>
         <Image
           src={agenda.src}

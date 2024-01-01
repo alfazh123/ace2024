@@ -48,11 +48,11 @@ export default function LeadsProfile() {
               alt={item.name}
               width={200}
               height={200}
-              className="rounded-full bg-white"
+              className="rounded-full bg-slate-500"
             />
           </figure>
-          <p className="text-white font-bold text-lg">{item.name}</p>
-          <p className="text-white">{item.nim}</p>
+          <p className="font-bold text-lg">{item.name}</p>
+          <p className="">{item.nim}</p>
         </div>
       ))}
     </div>
