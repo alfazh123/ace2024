@@ -6,99 +6,99 @@ const dataSponsor = [
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/2.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/3.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/4.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/5.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/6.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/7.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/8.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/9.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/10.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/11.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/12.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/13.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/14.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/15.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/16.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/17.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/18.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/19.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/20.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/21.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/22.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/23.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/24.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/25.png",
+    src: "/sponsor/1.png",
     alt: "Logo Sponsor",
   },
 ];
@@ -108,15 +108,15 @@ export default function Sponsor() {
     <div className="flex flex-wrap justify-center items-center py-10">
       {dataSponsor.map((item, index) => (
         <div
-          className="flex flex-col justify-center items-center px-5 py-5"
+          className="flex flex-col justify-center items-center px-5 py-5 shadow-md m-2 rounded-lg hover:shadow-2xl transition duration-300 ease-in-out"
           key={index}
         >
           <figure className="">
             <Image
               src={item.src}
               alt={item.alt}
-              width={100}
-              height={100}
+              width={150}
+              height={150}
               className="rounded-full bg-slate-500"
             />
           </figure>

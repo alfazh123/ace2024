@@ -17,11 +17,16 @@ const data = [
     href: "/contact",
     current: false,
   },
+  {
+    name: "Team",
+    href: "/team",
+    current: false,
+  },
 ];
 
 export default function Navbar() {
   return (
-    <nav className="bg-neutral-300 flex justify-between px-20 py-3">
+    <nav className="bg-slate-300 shadow-xl flex justify-between px-20 py-3 fixed w-full">
       <Image
         src="/next.svg"
         alt="Next.js Logo"

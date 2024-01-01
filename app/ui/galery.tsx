@@ -13,6 +13,18 @@ const dataGalery = [
     desc: "Penyampaian Materi",
     src: "/galery/1.jpg",
   },
+  {
+    desc: "Penyampaian Materi",
+    src: "/galery/1.jpg",
+  },
+  {
+    desc: "Stand Pameran",
+    src: "/galery/2.jpg",
+  },
+  {
+    desc: "Penyampaian Materi",
+    src: "/galery/1.jpg",
+  },
 ];
 
 export default function Galery() {
@@ -20,10 +32,7 @@ export default function Galery() {
     <div className="w-full flex justify-center">
       <div className="carousel">
         {dataGalery.map((item, index) => (
-          <figure
-            className="relative carousel-center mx-4 bg-slate-700"
-            key={index}
-          >
+          <figure className="carousel-center mx-4 bg-slate-700" key={index}>
             <Image
               src={item.src}
               alt={item.desc}

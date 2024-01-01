@@ -25,7 +25,7 @@ const agendaData = [
 export default function Home() {
   return (
     <main className="">
-      <header className="flex flex-col p-10 border-solid border-b-2">
+      <header className="flex flex-col h-screen md:p-10 py-10 border-solid border-b-2">
         <Image
           src="/next.svg"
           alt="Next.js Logo"
@@ -33,17 +33,16 @@ export default function Home() {
           height={37}
           className="justify-center h-96 items-center m-auto bg-slate-300 rounded-lg w-full"
         />
-        <div
-          className={`${openSans.className} flex flex-col justify-center pl-20  space-y-5`}
-        >
+        <div className={`${openSans.className} flex flex-col justify-center`}>
           <h1 className="text-6xl font-bold">ACE 2024</h1>
           <p>Assa'adah Campus Expo 2024</p>
+          <p>Temukan Kampus Pilihanmu</p>
         </div>
       </header>
 
-      <div className="min-h-96 mt-10">
-        <h2 className="text-2xl font-bold">What is ACE</h2>
-        <p className="text-md text-justify">
+      <div className="my-20 ">
+        <h2 className="text-4xl font-bold">What is ACE</h2>
+        <p className="text-lg text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptates.Commodo cupidatat sint nostrud esse Lorem sunt ullamco.
           Incididunt enim do sunt tempor aute occaecat laboris pariatur aliqua
@@ -60,14 +59,45 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="justify-center items-center pb-32 space-y-8 bg-slate-300">
-        <h2 className="text-2xl font-bold text-center">Galery</h2>
+      <div className="justify-center items-center pb-20 space-y-8 rounded-lg bg-slate-300">
+        <h2 className="text-2xl font-bold text-center pt-5">Galery</h2>
         <Galery />
       </div>
 
+      <div className="my-10">
+        <h2 className="text-2xl font-bold text-center p-5">
+          Kegiatan di ACE 2024
+        </h2>
+        <div className="md:grid md:grid-cols-3 flex flex-col">
+          <div className="bg-slate-400 p-10">
+            <h2 className="text-2xl font-bold text-center pb-5">Seminar</h2>
+            <p>
+              Pengisian materi tenang berbagai hal yang berhubungan dengan
+              perkuliahan, seminar ini diisi oleh para alumni yang berkuliah di
+              berbagai kampus yang ada di Indonesia
+            </p>
+          </div>
+          <div className="bg-slate-300 p-10">
+            <h2 className="text-2xl font-bold text-center pb-5">Pameran</h2>
+            <p>
+              Pameran yang diisi oleh berbagai kampus yang ada di Indonesia,
+              Para siswa bisa menanyakan tentang perkuliahan dengan lebih dekat
+              pada kampus tujuan mereka
+            </p>
+          </div>
+          <div className="bg-slate-400 p-10">
+            <h2 className="text-2xl font-bold text-center pb-5">Seminar</h2>
+            <p>
+              Seminar yang akan diisi oleh para alumni yang berkuliah di
+              berbagai kampus yang ada di Indonesia
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div>
-        <h2 className="text-2xl font-bold text-center">Roundown</h2>
-        <div className="flex flex-col space-y-10 py-10 px-10 md:grid md:grid-cols-3 md:space-x-5 md:space-y-0">
+        <h2 className="text-2xl font-bold text-center py-10">Roundown</h2>
+        <div className="flex flex-col space-y-10 py-10 px-10 lg:grid lg:grid-cols-3 lg:space-x-5 lg:space-y-0">
           {agendaData.map((agenda) => (
             <AgendaCard
               agendaName={agenda.agendaName}
@@ -80,13 +110,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-32">
+      <div className="py-32 flex flex-col items-center justify-center">
         <h2 className="text-2xl font-bold text-center">Leads Profile</h2>
         <p className="text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           voluptates.
         </p>
         <LeadsProfile />
+        <button className="bg-sky-800 hover:bg-sky-600 mx-auto rounded-lg py-2 px-5 text-white font-bold">
+          Meet Teams
+        </button>
       </div>
 
       <div>

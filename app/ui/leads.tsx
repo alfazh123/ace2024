@@ -3,33 +3,48 @@ import { Lusitana, Open_Sans } from "next/font/google";
 
 const dataLeads = [
   {
-    name: "Muhammad Iqbal",
-    nim: "0000000001",
+    name: "M. Hasan Amin",
+    role: "Ketua Pelaksana",
     src: "/leads/1.jpg",
   },
   {
-    name: "Muhammad Iqbal",
-    nim: "0000000001",
+    name: "M. Faizul Umam",
+    role: "Wakil Ketua Pelaksana",
     src: "/leads/1.jpg",
   },
   {
-    name: "Muhammad Iqbal",
-    nim: "0000000001",
+    name: "Khansa Nur Shafa. F",
+    role: "Sekertaris",
     src: "/leads/1.jpg",
   },
   {
-    name: "Muhammad Iqbal",
-    nim: "0000000001",
+    name: "Nata Zahroh",
+    role: "Wakil Sekertaris",
     src: "/leads/1.jpg",
   },
   {
-    name: "Muhammad Iqbal",
-    nim: "0000000001",
+    name: "Amanda Dwi. R",
+    role: "Bendahara",
     src: "/leads/1.jpg",
   },
   {
-    name: "Muhammad Iqbal",
-    nim: "0000000001",
+    name: "Rabiah Al Adawiyah",
+    role: "Wakil Bendahara",
+    src: "/leads/1.jpg",
+  },
+  {
+    name: "Yufi Fahri Dubais",
+    role: "Korlap SMA",
+    src: "/leads/1.jpg",
+  },
+  {
+    name: "M. Muzhirul Alam",
+    role: "Korlap MA",
+    src: "/leads/1.jpg",
+  },
+  {
+    name: "Anugerah Adjie. F",
+    role: "Korlap SMK",
     src: "/leads/1.jpg",
   },
 ];
@@ -52,7 +67,7 @@ export default function LeadsProfile() {
             />
           </figure>
           <p className="font-bold text-lg">{item.name}</p>
-          <p className="">{item.nim}</p>
+          <p className="">{item.role}</p>
         </div>
       ))}
     </div>
