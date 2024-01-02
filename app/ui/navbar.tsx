@@ -13,13 +13,8 @@ const data = [
     current: false,
   },
   {
-    name: "Contact",
-    href: "/contact",
-    current: false,
-  },
-  {
-    name: "Team",
-    href: "/team",
+    name: "FAQ",
+    href: "/faq",
     current: false,
   },
 ];

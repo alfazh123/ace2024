@@ -4,6 +4,7 @@ import Galery from "./ui/galery";
 import LeadsProfile from "./ui/leads";
 import AgendaCard from "./ui/agendaCard";
 import Sponsor from "./ui/sponsor";
+import Link from "next/link";
 
 const openSans = Open_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -12,13 +13,13 @@ const agendaData = [
     agendaName: "Pendaftaran",
     agendaDate: "1 Januari 2022",
     src: "/next.svg",
-    href: "/",
+    href: "/rundown/day1",
   },
   {
     agendaName: "Pendaftaran",
     agendaDate: "1 Januari 2022",
     src: "/next.svg",
-    href: "/",
+    href: "/rundown/day2",
   },
 ];
 
@@ -117,9 +118,11 @@ export default function Home() {
           voluptates.
         </p>
         <LeadsProfile />
-        <button className="bg-sky-800 hover:bg-sky-600 mx-auto rounded-lg py-2 px-5 text-white font-bold">
-          Meet Teams
-        </button>
+        <Link href="/teams">
+          <button className="bg-sky-800 hover:bg-sky-600 mx-auto rounded-lg py-2 px-5 text-white font-bold">
+            Meet Teams
+          </button>
+        </Link>
       </div>
 
       <div>
