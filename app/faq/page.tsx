@@ -40,7 +40,7 @@ export default function Page() {
 
       <div className="flex flex-col">
         {dataFAQ.map((item, index) => (
-          <details className="mb-5 dropdown flex flex-col -z-0">
+          <details key={index} className="mb-5 dropdown flex flex-col -z-0">
             <summary className="text-3xl font-semibold bg-slate-100 rounded-lg px-3 py-2">
               {item.question}
             </summary>
