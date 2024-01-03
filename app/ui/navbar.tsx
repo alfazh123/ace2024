@@ -1,5 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { IoMenu } from "react-icons/io5";
+import { MdOutlineMenu } from "react-icons/md";
+import { useRouter } from "next/router";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
 
 const data = [
   {
@@ -20,21 +26,49 @@ const data = [
 ];
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
+
   return (
-    <nav className="bg-slate-300 shadow-xl flex justify-between px-20 py-3 fixed w-full">
-      <Image
-        src="/next.svg"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
-      <div className="flex items-center space-x-5 text-slate-900">
-        {data.map((item) => (
-          <Link href={item.href} key={item.name}>
-            <p>{item.name}</p>
-          </Link>
-        ))}
+    <nav className="fixed w-full">
+      <div className="flex justify-between bg-slate-300 shadow-xl md:px-20 px-10 py-3">
+        <Link href="/">
+          <Image
+            src="/next.svg"
+            alt="Next.js Logo"
+            width={150}
+            height={100}
+            priority
+          />
+        </Link>
+        <div className="md:flex hidden items-center space-x-5 text-slate-900">
+          {data.map((item) => (
+            <Link href={item.href} key={item.name}>
+              <p>{item.name}</p>
+            </Link>
+          ))}
+        </div>
+        <div className="md:hidden flex items-center">
+          <button onClick={toggleMenu}>
+            <MdOutlineMenu className="text-3xl text-slate-900" />
+          </button>
+        </div>
+      </div>
+
+      <div
+        className={`py-5 bg-slate-200 w-full px-10 md:hidden ${
+          isOpen ? "block" : "hidden"
+        }`}
+      >
+        <ul className="space-y-4">
+          {data.map((item, index) => (
+            <li key={index}>
+              <Link href={item.href} key={item.name}>
+                <p>{item.name}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
