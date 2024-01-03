@@ -69,7 +69,7 @@ export default function Page() {
         <h1 className="text-6xl font-bold my-5 w-full">Day 1 </h1>
         <p className="text-lg text-justify">25 January 2024, 07.00 - 12.00</p>
         <p className="text-lg text-justify">
-          Aula SMA Assa'adah dan MA Assa'adah
+          Aula SMA Assa&apos;adah dan MA Assa&apos;adah
         </p>
       </header>
 
@@ -77,13 +77,14 @@ export default function Page() {
         <h3 className="text-3xl font-semibold">Seminar PTN</h3>
         <p>
           Pada Seminar PTN kali ini akan dihadiri oleh 15 Perguruan Tinggi
-          Negeri yang ada di indonesia, acara diadakan di Aula SMA Assa'adah
-          untuk bagian SOSHUM dan Aula MA Assa'adah untuk bagian SAINTEK. acara
-          ini akan diisi oleh narasumber dari kampus-kampus tersebut.
+          Negeri yang ada di indonesia, acara diadakan di Aula SMA
+          Assa&apos;adah untuk bagian SOSHUM dan Aula MA Assa&apos;adah untuk
+          bagian SAINTEK. acara ini akan diisi oleh narasumber dari
+          kampus-kampus tersebut.
         </p>
       </div>
 
-      <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
+      {/* <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
         <div>
           <h3 className="text-2xl font-semibold">Agenda</h3>
           <ul className="list-disc space-y-4 my-5">
@@ -105,6 +106,50 @@ export default function Page() {
             loading="lazy"
             className="md:h-96 h-60 w-full mb-10"
           ></iframe>
+        </div>
+      </div> */}
+
+      <div role="tablist" className="tabs tabs-bordered mb-10">
+        <input
+          type="radio"
+          name="my_tabs_1"
+          role="tab"
+          className="tab"
+          aria-label="SAINTEK"
+        />
+        <div role="tabpanel" className="tab-content">
+          <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
+            <Agenda name="Agenda SAINSTEK" data={scheduleSaintek} />
+            <div>
+              <h3 className="text-2xl font-semibold">Place</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1032.7055690347038!2d112.57446812926018!3d-7.053019377690204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77fd20449a2965%3A0xa2e4c68a7da93562!2sMA%20MA&#39;ARIF%20NU%20ASSA&#39;ADAH!5e0!3m2!1sid!2sid!4v1704261782020!5m2!1sid!2sid"
+                loading="lazy"
+                className="md:h-96 h-60 w-full mb-10"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <input
+          type="radio"
+          name="my_tabs_1"
+          role="tab"
+          className="tab"
+          aria-label="SHOSUM"
+        />
+        <div role="tabpanel" className="tab-content">
+          <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
+            <Agenda name="Agenda SOSHUM" data={scheduleSoshum} />
+            <div>
+              <h3 className="text-2xl font-semibold">Place</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321.5364826472804!2d112.57436328801559!3d-7.0529246017201235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77e25290b56c11%3A0x77fe4bafdf0a78bc!2sSMA%20Assaadah!5e0!3m2!1sid!2sid!4v1704261943910!5m2!1sid!2sid"
+                loading="lazy"
+                className="md:h-96 h-60 w-full mb-10"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
