@@ -84,31 +84,6 @@ export default function Page() {
         </p>
       </div>
 
-      {/* <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
-        <div>
-          <h3 className="text-2xl font-semibold">Agenda</h3>
-          <ul className="list-disc space-y-4 my-5">
-            {scheduleSaintek.map((item, index) => (
-              <li key={index}>
-                <div className="timeline-marker"></div>
-                <div className="">
-                  <p className="text-md">{item.time}</p>
-                  <p className="text-lg font-semibold">{item.agenda}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-2xl font-semibold">Place</h3>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.6285368672657!2d112.57178217506866!3d-7.052860569113549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77e25290b56c11%3A0x77fe4bafdf0a78bc!2sSMA%20Assaadah!5e0!3m2!1sid!2sid!4v1704190724387!5m2!1sid!2sid"
-            loading="lazy"
-            className="md:h-96 h-60 w-full mb-10"
-          ></iframe>
-        </div>
-      </div> */}
-
       <div role="tablist" className="tabs tabs-bordered mb-10">
         <input
           type="radio"
