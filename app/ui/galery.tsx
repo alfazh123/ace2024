@@ -3,27 +3,27 @@ import Image from "next/image";
 const dataGalery = [
   {
     desc: "Penyampaian Materi",
-    src: "/galery/1.jpg",
+    src: "",
   },
   {
     desc: "Stand Pameran",
-    src: "/galery/2.jpg",
+    src: "",
   },
   {
     desc: "Penyampaian Materi",
-    src: "/galery/1.jpg",
+    src: "",
   },
   {
     desc: "Penyampaian Materi",
-    src: "/galery/1.jpg",
+    src: "",
   },
   {
     desc: "Stand Pameran",
-    src: "/galery/2.jpg",
+    src: "",
   },
   {
     desc: "Penyampaian Materi",
-    src: "/galery/1.jpg",
+    src: "",
   },
 ];
 

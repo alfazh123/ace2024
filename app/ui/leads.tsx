@@ -5,47 +5,47 @@ const dataLeads = [
   {
     name: "M. Hasan Amin",
     role: "Ketua Pelaksana",
-    src: "/leads/1.jpg",
+    src: "",
   },
   {
     name: "M. Faizul Umam",
     role: "Wakil Ketua Pelaksana",
-    src: "/leads/1.jpg",
+    src: "",
   },
   {
     name: "Khansa Nur Shafa. F",
     role: "Sekertaris",
-    src: "/leads/1.jpg",
+    src: "",
   },
   {
     name: "Nata Zahroh",
     role: "Wakil Sekertaris",
-    src: "/leads/1.jpg",
+    src: "",
   },
   {
     name: "Amanda Dwi. R",
     role: "Bendahara",
-    src: "/leads/1.jpg",
+    src: "",
   },
   {
     name: "Rabiah Al Adawiyah",
     role: "Wakil Bendahara",
-    src: "/leads/1.jpg",
+    src: "",
   },
   {
     name: "Yufi Fahri Dubais",
     role: "Korlap SMA",
-    src: "/leads/1.jpg",
+    src: "",
   },
   {
     name: "M. Muzhirul Alam",
     role: "Korlap MA",
-    src: "/leads/1.jpg",
+    src: "",
   },
   {
     name: "Anugerah Adjie. F",
     role: "Korlap SMK",
-    src: "/leads/1.jpg",
+    src: "",
   },
 ];
 

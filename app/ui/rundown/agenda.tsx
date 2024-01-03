@@ -1,15 +1,18 @@
+import { title } from "process";
+
 interface Schedule {
+  name: string;
   data: {
     time: string;
     agenda: string;
   }[];
 }
 
-export default function Agenda({ data }: Schedule) {
+export default function Agenda({ data, name }: Schedule) {
   return (
     <div>
-      <h3 className="text-2xl font-semibold">Agenda</h3>
-      <ul className="list-disc space-y-4 my-5">
+      <h3 className="text-2xl font-semibold">{name}</h3>
+      <ul className="list-disc space-y-4 my-5 ml-4">
         {data.map((item, index) => (
           <li key={index}>
             <div className="timeline-marker"></div>

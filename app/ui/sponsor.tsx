@@ -2,103 +2,103 @@ import Image from "next/image";
 
 const dataSponsor = [
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
   {
-    src: "/sponsor/1.png",
+    src: "",
     alt: "Logo Sponsor",
   },
 ];
