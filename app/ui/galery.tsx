@@ -32,7 +32,10 @@ export default function Galery() {
     <div className="w-full flex justify-center">
       <div className="carousel">
         {dataGalery.map((item, index) => (
-          <figure className="carousel-center mx-4 bg-slate-700" key={index}>
+          <figure
+            className="carousel-center mx-4 bg-slate-700 rounded-xl"
+            key={index}
+          >
             <Image
               src={item.src}
               alt={item.desc}
