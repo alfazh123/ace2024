@@ -4,6 +4,7 @@ import Link from "next/link";
 interface DataCard {
   agendaName: string;
   agendaDate: string;
+  tag: string;
   src: string;
   href: string;
 }
@@ -19,9 +20,16 @@ export default function AgendaCard(agenda: DataCard) {
           height={500}
           className="rounded-t-lg"
         />
-        <div className="p-5">
-          <h3 className="text-xl font-bold">{agenda.agendaName}</h3>
-          <p>{agenda.agendaDate}</p>
+        <div className="flex justify-between items-center">
+          <div className="p-5">
+            <h3 className="text-xl font-bold">{agenda.agendaName}</h3>
+            <p>{agenda.agendaDate}</p>
+          </div>
+          <div className="pr-4">
+            <p className="rounded-full border-solid border-2 border-slate-400 px-3 py-1">
+              {agenda.tag}
+            </p>
+          </div>
         </div>
       </Link>
     </div>

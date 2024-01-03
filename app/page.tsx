@@ -10,14 +10,16 @@ const openSans = Open_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
 const agendaData = [
   {
-    agendaName: "Pendaftaran",
-    agendaDate: "1 Januari 2022",
+    agendaName: "Day 1",
+    agendaDate: "25 Januari 2022",
+    tag: "PTN",
     src: "/next.svg",
     href: "/rundown/day1",
   },
   {
-    agendaName: "Pendaftaran",
-    agendaDate: "1 Januari 2022",
+    agendaName: "Day 2",
+    agendaDate: "26 Januari 2022",
+    tag: "PTS",
     src: "/next.svg",
     href: "/rundown/day2",
   },
@@ -103,6 +105,7 @@ export default function Home() {
             <AgendaCard
               agendaName={agenda.agendaName}
               agendaDate={agenda.agendaDate}
+              tag={agenda.tag}
               src={agenda.src}
               href={agenda.href}
               key={agenda.agendaName}
