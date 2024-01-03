@@ -36,7 +36,7 @@ export default function Home() {
         />
         <div className={`${openSans.className} flex flex-col justify-center`}>
           <h1 className="text-6xl font-bold">ACE 2024</h1>
-          <p>Assa'adah Campus Expo 2024</p>
+          <p>Assa&apos;adah Campus Expo 2024</p>
           <p>Temukan Kampus Pilihanmu</p>
         </div>
       </header>
