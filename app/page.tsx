@@ -5,6 +5,14 @@ import LeadsProfile from "./ui/leads";
 import AgendaCard from "./ui/agendaCard";
 import Sponsor from "./ui/sponsor";
 import Link from "next/link";
+import fs from "fs";
+
+const getPosts = () => {
+  const postsDirectory = fs.readdirSync("campus");
+  const markdodownPost = postsDirectory.filter((post) => post.endsWith(".mdx"));
+  const slug = markdodownPost.map((post) => post.replace(".mdx", ""));
+  return slug;
+};
 
 const openSans = Open_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -26,6 +34,15 @@ const agendaData = [
 ];
 
 export default function Home() {
+  const posts = getPosts();
+  const preview = posts.map((post) => {
+    return (
+      <div>
+        <Link href={`/campus/${post}`}>{post}</Link>
+      </div>
+    );
+  });
+
   return (
     <main className="">
       <header className="flex flex-col h-screen md:p-10 py-10 border-solid border-b-2">
@@ -40,6 +57,8 @@ export default function Home() {
           <h1 className="text-6xl font-bold">ACE 2024</h1>
           <p>Assa&apos;adah Campus Expo 2024</p>
           <p>Temukan Kampus Pilihanmu</p>
+          <Link href="/my-mdx-remote">coba</Link>
+          <div>{preview}</div>
         </div>
       </header>
 
