@@ -40,7 +40,6 @@ export default function Home() {
           <h1 className="text-6xl font-bold">ACE 2024</h1>
           <p>Assa&apos;adah Campus Expo 2024</p>
           <p>Temukan Kampus Pilihanmu</p>
-          <Link href="/blog">Blog</Link>
         </div>
       </header>
 
@@ -113,6 +112,16 @@ export default function Home() {
             />
           ))}
         </div>
+      </div>
+
+      <div className="flex flex-col items-center">
+        <h2 className="text-2xl font-bold text-center py-10">Campus</h2>
+        <Link
+          href="/blog"
+          className="bg-blue-500 hover:bg-blue-700 text-slate-100 rounded-md py-2 px-5 text-center"
+        >
+          See More...
+        </Link>
       </div>
 
       <div className="py-32 flex flex-col items-center justify-center">

@@ -2,6 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 import path from "path";
+import Image from "next/image";
 
 export default function Blog(campus: any) {
   const blogDir = "campus";
@@ -20,12 +21,31 @@ export default function Blog(campus: any) {
   return (
     <div>
       <div className="min-h-screen justify-center flex flex-col">
-        <h2 className="text-4xl font-bold">Blog</h2>
-        {blogs.map((blog) => (
-          <Link href={`/campus/${blog.slug}`} passHref key={blog.slug}>
-            <p>{blog.meta.title}</p>
-          </Link>
-        ))}
+        <h2 className="text-4xl font-bold mt-32">Blog</h2>
+        <input
+          type="text"
+          placeholder="Search"
+          className="p-2 rounded-lg bg-slate-200"
+        />
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 md:gap-2 gap-5 grid-cols-1 m-2">
+          {blogs.map((blog) => (
+            <Link
+              href={`/campus/${blog.slug}`}
+              passHref
+              key={blog.slug}
+              className="bg-slate-300 rounded-lg p-2 w-full"
+            >
+              <Image
+                src={blog.meta.image}
+                alt={blog.meta.title}
+                width={200}
+                height={300}
+                className="justify-center h-60 items-center m-auto bg-slate-300 rounded-lg w-full"
+              />
+              <p>{blog.meta.title}</p>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
