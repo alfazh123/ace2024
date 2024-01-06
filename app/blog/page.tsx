@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import path from "path";
 import Image from "next/image";
+import SearchBar from "../ui/blog/search-bar";
 
 export default function Blog(campus: any) {
   const blogDir = "campus";
@@ -22,11 +23,7 @@ export default function Blog(campus: any) {
     <div>
       <div className="min-h-screen justify-center flex flex-col">
         <h2 className="text-4xl font-bold mt-32">Blog</h2>
-        <input
-          type="text"
-          placeholder="Search"
-          className="p-2 rounded-lg bg-slate-200"
-        />
+        <SearchBar />
         <div className="grid lg:grid-cols-3 md:grid-cols-2 md:gap-2 gap-5 grid-cols-1 m-2">
           {blogs.map((blog) => (
             <Link
