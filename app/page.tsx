@@ -1,26 +1,43 @@
-import Image from "next/image";
 import { Open_Sans } from "next/font/google";
 import Galery from "./ui/galery";
-import LeadsProfile from "./ui/leads";
 import AgendaCard from "./ui/agendaCard";
 import Sponsor from "./ui/sponsor";
 import Link from "next/link";
+import CampusPreview from "./ui/campus-preview";
 
 const openSans = Open_Sans({ weight: ["400", "700"], subsets: ["latin"] });
+
+const DataCampusPreview = [
+  {
+    campusName: "Institut Teknologi Sepuluh Nopember",
+    src: "/campus/its.jpeg",
+    href: "/campus/Institut-Teknologi-Sepuluh-Nopember",
+  },
+  {
+    campusName: "Universitas Qomaruddin Gresik",
+    src: "/campus/uq.png",
+    href: "/campus/Universitas-Qomaruddin",
+  },
+  {
+    campusName: "Universitas Negri Surabaya",
+    src: "/campus/unesa.jpeg",
+    href: "/campus/Universitas-Negeri-Surabaya",
+  },
+];
 
 const agendaData = [
   {
     agendaName: "Day 1",
     agendaDate: "25 Januari 2022",
     tag: "PTN",
-    src: "/next.svg",
+    src: "/agenda/day1.svg",
     href: "/rundown/day1",
   },
   {
     agendaName: "Day 2",
     agendaDate: "26 Januari 2022",
     tag: "PTS",
-    src: "/next.svg",
+    src: "/agenda/day2.svg",
     href: "/rundown/day2",
   },
 ];
@@ -28,15 +45,16 @@ const agendaData = [
 export default function Home() {
   return (
     <main className="">
-      <header className="flex flex-col h-screen md:p-10 py-10 border-solid border-b-2">
-        <Image
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          className="justify-center h-96 items-center m-auto bg-slate-300 rounded-lg w-full"
-        />
-        <div className={`${openSans.className} flex flex-col justify-center`}>
+      <header className="flex flex-col md:h-screen sm:p-10 py-10 border-solid border-b-2">
+        <div
+          className="justify-center md:h-96 items-center md:m-auto mt-20 bg-slate-300 rounded-lg sm:w-full w-full h-60 bg-cover bg-right"
+          style={{
+            backgroundImage: "url(/imagehome.svg)",
+          }}
+        ></div>
+        <div
+          className={`${openSans.className} flex flex-col justify-center md:mt-0 mt-10`}
+        >
           <h1 className="text-6xl font-bold">ACE 2024</h1>
           <p>Assa&apos;adah Campus Expo 2024</p>
           <p>Temukan Kampus Pilihanmu</p>
@@ -62,7 +80,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="justify-center items-center pb-20 space-y-8 rounded-lg bg-slate-300">
+      <div className="justify-center items-center md:pb-20 pb-10 space-y-8 rounded-lg bg-slate-300">
         <h2 className="text-2xl font-bold text-center pt-5">Galery</h2>
         <Galery />
       </div>
@@ -100,7 +118,7 @@ export default function Home() {
 
       <div>
         <h2 className="text-2xl font-bold text-center py-10">Roundown</h2>
-        <div className="flex flex-col space-y-10 py-10 px-10 lg:grid lg:grid-cols-3 lg:space-x-5 lg:space-y-0">
+        <div className="flex flex-col space-y-10 py-10 md:px-10 lg:grid lg:grid-cols-3 lg:space-x-5 lg:space-y-0">
           {agendaData.map((agenda) => (
             <AgendaCard
               agendaName={agenda.agendaName}
@@ -114,27 +132,23 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mb-20">
         <h2 className="text-2xl font-bold text-center py-10">Campus</h2>
+        <div className="md:grid lg:grid-cols-3 md:grid-cols-2 justify-center items-center my-5 gap-5">
+          {DataCampusPreview.map((campus, index) => (
+            <CampusPreview
+              campusName={campus.campusName}
+              src={campus.src}
+              href={campus.href}
+              key={index}
+            />
+          ))}
+        </div>
         <Link
           href="/blog"
           className="bg-blue-500 hover:bg-blue-700 text-slate-100 rounded-md py-2 px-5 text-center"
         >
           See More...
-        </Link>
-      </div>
-
-      <div className="py-32 flex flex-col items-center justify-center">
-        <h2 className="text-2xl font-bold text-center">Leads Profile</h2>
-        <p className="text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates.
-        </p>
-        <LeadsProfile />
-        <Link href="/teams">
-          <button className="bg-sky-800 hover:bg-sky-600 mx-auto rounded-lg py-2 px-5 text-white font-bold">
-            Meet Teams
-          </button>
         </Link>
       </div>
 
