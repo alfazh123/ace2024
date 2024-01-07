@@ -22,24 +22,24 @@ export default function Blog(campus: any) {
   return (
     <div>
       <div className="min-h-screen justify-center flex flex-col">
-        <h2 className="text-4xl font-bold mt-32">Blog</h2>
+        <h2 className="text-4xl font-bold mt-32 mb-4">Blog</h2>
         <SearchBar />
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 md:gap-2 gap-5 grid-cols-1 m-2">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 md:gap-4 gap-5 grid-cols-1 m-2">
           {blogs.map((blog) => (
             <Link
               href={`/campus/${blog.slug}`}
               passHref
               key={blog.slug}
-              className="bg-slate-300 rounded-lg p-2 w-full"
+              className="shadow-lg hover:shadow-2xl space-y-4 items-center flex flex-col transition duration-300 ease-in-out rounded-lg p-2 w-full"
             >
               <Image
                 src={blog.meta.image}
                 alt={blog.meta.title}
                 width={200}
                 height={300}
-                className="justify-center h-60 items-center m-auto bg-slate-300 rounded-lg w-full"
+                className="justify-center h-60 items-center m-auto  rounded-lg w-60"
               />
-              <p>{blog.meta.title}</p>
+              <p className="mt-3 text-lg font-semibold">{blog.meta.title}</p>
             </Link>
           ))}
         </div>
