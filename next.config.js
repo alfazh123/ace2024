@@ -8,3 +8,9 @@ const nextConfig = {
 };
 
 module.exports = withMDX(nextConfig);
+
+module.exports = {
+  images: {
+    domains: ["lh3.googleusercontent.com", "i0.wp.com"],
+  },
+};
