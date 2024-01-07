@@ -34,10 +34,10 @@ export default function Navbar() {
       <div className="flex justify-between bg-slate-300 shadow-xl md:px-20 px-10 py-3">
         <Link href="/">
           <Image
-            src="/next.svg"
+            src="/ace2024.svg"
             alt="Next.js Logo"
-            width={150}
-            height={100}
+            width={80}
+            height={80}
             priority
           />
         </Link>
