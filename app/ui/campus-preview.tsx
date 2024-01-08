@@ -9,20 +9,22 @@ interface DataCampusPreview {
 
 export default function CampusPreview(campus: DataCampusPreview) {
   return (
-    <div>
+    <div className="rounded-lg text-oliver md:w-72 text-center">
       <Link
         href={campus.href}
         passHref
-        className="shadow-lg hover:shadow-2xl space-y-4 items-center flex flex-col transition duration-300 ease-in-out rounded-lg p-2 w-full"
+        className=" hover:shadow-2xl bg-sage space-y-4 items-center flex flex-col rounded-lg p-2 w-full shadow-lg transition duration-300 ease-in-out"
       >
         <Image
           src={campus.src}
           alt={campus.campusName}
           width={200}
           height={300}
-          className="justify-center h-60 items-center m-auto  rounded-lg w-60"
+          className="justify-center md:h-60 h-40 items-center m-auto  rounded-lg md:w-60 w-40"
         />
-        <p className="mt-3 text-lg font-semibold">{campus.campusName}</p>
+        <p className="mt-3 md:text-lg text-md font-semibold">
+          {campus.campusName}
+        </p>
       </Link>
     </div>
   );
