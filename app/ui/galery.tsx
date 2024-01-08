@@ -33,7 +33,7 @@ export default function Galery() {
       <div className=" carousel md:mx-5 mx-3">
         {dataGalery.map((item, index) => (
           <figure
-            className=" mx-2 bg-slate-700 rounded-xl carousel-item"
+            className=" mx-2 bg-slate-700 rounded-xl carousel-item shadow-lg my-5"
             key={index}
           >
             <Image

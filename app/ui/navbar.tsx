@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed w-full">
-      <div className="flex justify-between bg-slate-300 shadow-xl md:px-20 px-10 py-3">
+      <div className="flex justify-between bg-pewter shadow-xl md:px-20 px-10 py-3">
         <Link href="/">
           <Image
             src="/ace2024.svg"

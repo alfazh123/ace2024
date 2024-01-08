@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-200 text-slate-900 pt-10">
+    <footer className="bg-sagegreen text-olive pt-10">
       <div className="container md:px-20 px-10 py-4 flex flex-col md:flex-row md:justify-between md:items-center space-y-5 md:space-x-5">
         <figure className="w-32">
           <Image
