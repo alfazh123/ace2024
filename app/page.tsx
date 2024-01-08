@@ -80,7 +80,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="justify-center items-center md:pb-20 pb-10 space-y-8 rounded-lg bg-slate-300">
+      <div className="justify-center items-center md:pb-20 pb-10 space-y-8 rounded-lg bg-sage">
         <h2 className="text-2xl font-bold text-center pt-5">Galery</h2>
         <Galery />
       </div>
@@ -90,7 +90,7 @@ export default function Home() {
           Kegiatan di ACE 2024
         </h2>
         <div className="md:grid md:grid-cols-3 flex flex-col">
-          <div className="bg-slate-400 p-10">
+          <div className="bg-olive p-10">
             <h2 className="text-2xl font-bold text-center pb-5">Seminar</h2>
             <p>
               Pengisian materi tenang berbagai hal yang berhubungan dengan
@@ -98,7 +98,7 @@ export default function Home() {
               berbagai kampus yang ada di Indonesia
             </p>
           </div>
-          <div className="bg-slate-300 p-10">
+          <div className="bg-sagegreen p-10">
             <h2 className="text-2xl font-bold text-center pb-5">Pameran</h2>
             <p>
               Pameran yang diisi oleh berbagai kampus yang ada di Indonesia,
@@ -106,7 +106,7 @@ export default function Home() {
               pada kampus tujuan mereka
             </p>
           </div>
-          <div className="bg-slate-400 p-10">
+          <div className="bg-olive p-10">
             <h2 className="text-2xl font-bold text-center pb-5">Seminar</h2>
             <p>
               Seminar yang akan diisi oleh para alumni yang berkuliah di
@@ -133,8 +133,9 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center mb-20">
-        <h2 className="text-2xl font-bold text-center py-10">Campus</h2>
-        <div className="md:grid lg:grid-cols-3 md:grid-cols-2 justify-center items-center my-5 gap-5">
+        <h2 className="text-2xl font-bold text-center pt-10">Campus</h2>
+        <p className="text-center">Informasi tentang kampus</p>
+        <div className="md:grid lg:grid-cols-3 md:grid-cols-2 justify-center my-5 gap-5">
           {DataCampusPreview.map((campus, index) => (
             <CampusPreview
               campusName={campus.campusName}
@@ -145,8 +146,8 @@ export default function Home() {
           ))}
         </div>
         <Link
-          href="/blog"
-          className="bg-blue-500 hover:bg-blue-700 text-slate-100 rounded-md py-2 px-5 text-center"
+          href="/campus"
+          className="bg-olive hover:bg-sagegreen hover:text-oliver hover:border-solid hover:border-2 hover:border-olive text-pewter rounded-md py-2 px-5 text-center"
         >
           See More...
         </Link>
