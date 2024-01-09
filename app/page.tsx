@@ -149,10 +149,10 @@ export default function Home() {
         </Link>
       </div>
 
-      <div>
+      {/* <div>
         <h2 className="text-2xl font-bold text-center">Our Partner</h2>
         <Sponsor />
-      </div>
+      </div> */}
     </main>
   );
 }
