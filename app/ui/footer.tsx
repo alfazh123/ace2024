@@ -17,10 +17,10 @@ export default function Footer() {
         </figure>
         <div>
           <p className="text-xl font-bold">Sosial</p>
-          <Link href="" className="flex">
+          <a href="https://www.instagram.com/ace_.2k24/" className="flex">
             <FaInstagram className={`mr-2 text-xl`} />
             ACE2024
-          </Link>
+          </a>
         </div>
         <div>
           <p className="text-xl font-bold">Alamat</p>
