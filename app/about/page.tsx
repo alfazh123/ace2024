@@ -11,16 +11,15 @@ export default function About() {
         <div>
           <h3 className="text-3xl font-semibold ">What is ACE</h3>
           <p className="text-lg text-justify">
-            Excepteur proident occaecat exercitation irure sit sit ipsum aute
-            nostrud minim magna nostrud labore sunt. Magna Lorem ea id dolore ut
-            aliquip fugiat est proident excepteur laboris laborum ullamco sunt.
-            Labore esse nostrud exercitation deserunt laborum eu laborum dolor
-            anim velit nostrud sint et mollit. Deserunt excepteur minim ut
-            nostrud. Eiusmod ad id sit non cupidatat et ullamco ex aute enim
-            incididunt cupidatat. Magna est eu in aliquip aute do anim
-            adipisicing voluptate voluptate aliquip ad. Ipsum quis elit aliqua
-            ullamco tempor ex adipisicing incididunt. Veniam ea ea amet nisi
-            sint exercitation.
+            ACE atau Assa&apos;adah Campus Expo merupakan sebuah acara campus
+            expo yang diadakan oleh IKBAL yang bertujuan untuk memberikan
+            gambaran kepada siswa-siswa SMA, MA, dan SMK Assa&apos;adah menganai
+            kampus-kampus yang ada di Indonesia. Dengan adanya acara ini,
+            diharapkan siswa-siswa dapat mengetahui kampus yang sesuai dengan
+            minat dan bakat mereka. Acara ini juga bertujuan untuk memberikan
+            gambaran kepada siswa-siswa mengenai dunia perkuliahan yang
+            sesungguhnya, sehingga siswa-siswa dapat mempersiapkan diri sebelum
+            memasuki dunia perkuliahan.
           </p>
         </div>
         <Image
@@ -36,16 +35,15 @@ export default function About() {
         <div className="ml-5">
           <h3 className="text-3xl font-semibold ">Why is ACE</h3>
           <p className="text-lg text-justify">
-            Excepteur proident occaecat exercitation irure sit sit ipsum aute
-            nostrud minim magna nostrud labore sunt. Magna Lorem ea id dolore ut
-            aliquip fugiat est proident excepteur laboris laborum ullamco sunt.
-            Labore esse nostrud exercitation deserunt laborum eu laborum dolor
-            anim velit nostrud sint et mollit. Deserunt excepteur minim ut
-            nostrud. Eiusmod ad id sit non cupidatat et ullamco ex aute enim
-            incididunt cupidatat. Magna est eu in aliquip aute do anim
-            adipisicing voluptate voluptate aliquip ad. Ipsum quis elit aliqua
-            ullamco tempor ex adipisicing incididunt. Veniam ea ea amet nisi
-            sint exercitation.
+            Dari tahun ke tahun, banyak siswa-siswa yang bingung dalam memilih
+            kampus atau jurusan yang sesuai dengan minat dan bakat mereka. Hal
+            ini dikarenakan kurangnya informasi mengenai kampus-kampus yang ada
+            di Indonesia. Oleh karena itu, ACE hadir untuk memberikan informasi
+            mengenai kampus-kampus yang ada di Indonesia. Dengan adanya
+            informasi ini, diharapkan siswa-siswa dapat mengetahui kampus yang
+            sesuai dengan minat dan bakat mereka. Dari ACE tahun lalu didapati
+            banyak siswa yang terbantu atas informasi yang diberikan oleh di
+            acara ini.
           </p>
         </div>
       </div>

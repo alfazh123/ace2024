@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { IoMenu } from "react-icons/io5";
 import { MdOutlineMenu } from "react-icons/md";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState, useCallback, useMemo } from "react";
 
 const data = [
@@ -25,7 +24,12 @@ const data = [
   },
 ];
 
-export default function Navbar() {
+interface NavbarProps {
+  href: string;
+}
+
+export default function Navbar({ href }: NavbarProps) {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
 
@@ -56,7 +60,7 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`py-5 bg-slate-200 w-full px-10 md:hidden ${
+        className={`py-5 bg-slate-200 w-full px-10 md:hidden bg-pewter ${
           isOpen ? "block" : "hidden"
         }`}
       >

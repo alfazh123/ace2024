@@ -60,7 +60,7 @@ export default function Page() {
     <div className="flex flex-col">
       <header className="min-h-96 mt-20 flex flex-col py-10 border-solid border-b-2 border-slate-300">
         <Image
-          src="/next.svg"
+          src="/imagehome.svg"
           alt="Logo"
           width={200}
           height={200}

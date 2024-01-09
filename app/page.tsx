@@ -64,19 +64,15 @@ export default function Home() {
       <div className="my-20 ">
         <h2 className="text-4xl font-bold">What is ACE</h2>
         <p className="text-lg text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          voluptates.Commodo cupidatat sint nostrud esse Lorem sunt ullamco.
-          Incididunt enim do sunt tempor aute occaecat laboris pariatur aliqua
-          consequat sint. Veniam aliqua ullamco magna ea ex do in cupidatat ut.
-          Veniam esse ea consequat et culpa exercitation ipsum consectetur culpa
-          ullamco exercitation cillum. Eiusmod minim labore amet deserunt
-          eiusmod mollit ex commodo id commodo. Cillum ipsum sint cupidatat ad.
-          Nisi ut consectetur laboris anim eiusmod nisi nisi cillum occaecat.
-          Quis fugiat occaecat ad in consectetur deserunt laborum ut consectetur
-          minim aliqua in. Dolor magna occaecat amet et amet excepteur qui
-          incididunt cillum ea enim dolor reprehenderit. Minim deserunt est
-          commodo pariatur ad quis magna duis. Nostrud occaecat ea esse et
-          occaecat ipsum veniam enim ea eiusmod. Veniam duis quis eu eu.
+          ACE atau Assa&apos;adah Campus Expo merupakan sebuah acara campus expo
+          yang diadakan oleh IKBAL yang bertujuan untuk memberikan gambaran
+          kepada siswa-siswa SMA, MA, dan SMK Assa&apos;adah menganai
+          kampus-kampus yang ada di Indonesia. Dengan adanya acara ini,
+          diharapkan siswa-siswa dapat mengetahui kampus yang sesuai dengan
+          minat dan bakat mereka. Acara ini juga bertujuan untuk memberikan
+          gambaran kepada siswa-siswa mengenai dunia perkuliahan yang
+          sesungguhnya, sehingga siswa-siswa dapat mempersiapkan diri sebelum
+          memasuki dunia perkuliahan.
         </p>
       </div>
 
@@ -135,7 +131,7 @@ export default function Home() {
       <div className="flex flex-col items-center mb-20">
         <h2 className="text-2xl font-bold text-center pt-10">Campus</h2>
         <p className="text-center">Informasi tentang kampus</p>
-        <div className="md:grid lg:grid-cols-3 md:grid-cols-2 justify-center my-5 gap-5">
+        <div className="md:grid lg:grid-cols-3 md:grid-cols-2 md:space-y-0 space-y-4 justify-center my-5 gap-5">
           {DataCampusPreview.map((campus, index) => (
             <CampusPreview
               campusName={campus.campusName}
