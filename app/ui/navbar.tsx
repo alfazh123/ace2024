@@ -28,7 +28,7 @@ interface NavbarProps {
   href: string;
 }
 
-export default function Navbar({ href }: NavbarProps) {
+export default function Navbar() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = useCallback(() => setIsOpen(!isOpen), [isOpen]);
