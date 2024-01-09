@@ -4,6 +4,7 @@ import AgendaCard from "./ui/agendaCard";
 import Sponsor from "./ui/sponsor";
 import Link from "next/link";
 import CampusPreview from "./ui/campus-preview";
+import Countdown from "./ui/countdown";
 
 const openSans = Open_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
@@ -60,6 +61,10 @@ export default function Home() {
           <p>Temukan Kampus Pilihanmu</p>
         </div>
       </header>
+
+      {/* <div className="flex justify-center items-center mt-10">
+        <Countdown />
+      </div> */}
 
       <div className="my-20 ">
         <h2 className="text-4xl font-bold">What is ACE</h2>
