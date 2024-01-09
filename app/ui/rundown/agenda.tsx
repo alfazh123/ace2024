@@ -1,5 +1,3 @@
-import { title } from "process";
-
 interface Schedule {
   name: string;
   data: {

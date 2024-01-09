@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { MdOutlineMenu } from "react-icons/md";
 import { useRouter } from "next/navigation";
-import React, { useEffect, useState, useCallback, useMemo } from "react";
+import React, { useState, useCallback } from "react";
 
 const data = [
   {
