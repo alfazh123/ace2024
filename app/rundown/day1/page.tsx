@@ -96,7 +96,7 @@ export default function Page() {
           <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
             <Agenda name="Agenda SAINSTEK" data={scheduleSaintek} />
             <div>
-              <h3 className="text-2xl font-semibold">Place</h3>
+              <h3 className="text-2xl font-semibold">Location</h3>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1032.7055690347038!2d112.57446812926018!3d-7.053019377690204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77fd20449a2965%3A0xa2e4c68a7da93562!2sMA%20MA&#39;ARIF%20NU%20ASSA&#39;ADAH!5e0!3m2!1sid!2sid!4v1704261782020!5m2!1sid!2sid"
                 loading="lazy"
@@ -117,7 +117,7 @@ export default function Page() {
           <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
             <Agenda name="Agenda SOSHUM" data={scheduleSoshum} />
             <div>
-              <h3 className="text-2xl font-semibold">Place</h3>
+              <h3 className="text-2xl font-semibold">Location</h3>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321.5364826472804!2d112.57436328801559!3d-7.0529246017201235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77e25290b56c11%3A0x77fe4bafdf0a78bc!2sSMA%20Assaadah!5e0!3m2!1sid!2sid!4v1704261943910!5m2!1sid!2sid"
                 loading="lazy"

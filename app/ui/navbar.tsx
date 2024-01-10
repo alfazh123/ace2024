@@ -48,7 +48,9 @@ export default function Navbar() {
         <div className="md:flex hidden items-center space-x-5 text-slate-900">
           {data.map((item) => (
             <Link href={item.href} key={item.name}>
-              <p>{item.name}</p>
+              <p className="font-semibold text-lg hover:bg-ivory px-3 py-2 rounded-lg">
+                {item.name}
+              </p>
             </Link>
           ))}
         </div>
@@ -60,7 +62,7 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`py-5 bg-slate-200 w-full px-10 md:hidden bg-pewter ${
+        className={`py-5 bg-slate-200 w-full px-5 md:hidden bg-ivory ${
           isOpen ? "block" : "hidden"
         }`}
       >
@@ -68,7 +70,9 @@ export default function Navbar() {
           {data.map((item, index) => (
             <li key={index}>
               <Link href={item.href} key={item.name}>
-                <p>{item.name}</p>
+                <p className="font-semibold hover:bg-pewter px-3 py-2 rounded-md">
+                  {item.name}
+                </p>
               </Link>
             </li>
           ))}

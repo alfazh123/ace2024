@@ -20,6 +20,7 @@ const config: Config = {
       sagegreen: "#D1E2C4",
       olive: "#778A35",
       sage: "#C1C2AD",
+      ivory: "#CFCDC2",
     },
   },
   plugins: [require("daisyui"), require("@tailwindcss/typography")],
