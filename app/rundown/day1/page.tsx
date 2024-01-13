@@ -58,31 +58,12 @@ export default function Page() {
         </p>
       </div>
 
-      <div role="tablist" className="tabs tabs-bordered mb-10">
-        <input
-          type="radio"
-          name="my_tabs_1"
-          role="tab"
-          className="tab"
-          aria-label="SAINTEK"
-        />
-        <div role="tabpanel" className="tab-content">
-          <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
-            <Agenda name="Agenda SAINSTEK" data={scheduleDay1} />
-            
-          </div>
-        </div>
+     
 
-        <input
-          type="radio"
-          name="my_tabs_1"
-          role="tab"
-          className="tab"
-          aria-label="SHOSUM"
-        />
-        <div role="tabpanel" className="tab-content">
+       
+        <div className="">
           <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
-            <Agenda name="Agenda SOSHUM" data={scheduleDay1} />
+            <Agenda name="Agenda" data={scheduleDay1} />
             <div>
               <h3 className="text-2xl font-semibold">Location</h3>
               <iframe
@@ -92,7 +73,7 @@ export default function Page() {
               ></iframe>
             </div>
           </div>
-        </div>
+        
       </div>
     </div>
   );
