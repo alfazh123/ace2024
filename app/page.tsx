@@ -118,7 +118,7 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold text-center py-10">Roundown</h2>
+        <h2 className="text-2xl font-bold text-center pt-10 pb-4">Roundown</h2>
         <div className="flex flex-col space-y-10 py-10 md:px-10 lg:grid lg:grid-cols-3 lg:space-x-5 lg:space-y-0">
           {agendaData.map((agenda) => (
             <AgendaCard
