@@ -59,13 +59,12 @@ export default function Page() {
   return (
     <div className="flex flex-col">
       <header className="min-h-96 mt-20 flex flex-col py-10 border-solid border-b-2 border-slate-300">
-        <Image
-          src="/imagehome.svg"
-          alt="Logo"
-          width={200}
-          height={200}
-          className="m-auto w-full h-96 bg-slate-300 rounded-lg"
-        />
+                <div
+          className="justify-center md:h-96 items-center md:m-auto mt-20 bg-slate-300 rounded-lg sm:w-full w-full h-60 bg-cover bg-right"
+          style={{
+            backgroundImage: "url(/imagehome.svg)",
+          }}
+        ></div>
         <h1 className="text-6xl font-bold my-5 w-full">Day 2 </h1>
         <p className="text-lg text-justify">26 January 2024, 07.00 - 12.00</p>
         <p className="text-lg text-justify">
