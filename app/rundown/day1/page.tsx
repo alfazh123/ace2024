@@ -43,7 +43,7 @@ export default function Page() {
         <h1 className="text-6xl font-bold my-5 w-full">Day 1 </h1>
         <p className="text-lg text-justify">25 January 2024, 07.00 - 12.00</p>
         <p className="text-lg text-justify">
-          Aula SMA Assa&apos;adah dan MA Assa&apos;adah
+          Aula SMA Assa&apos;adah
         </p>
       </header>
 
@@ -52,8 +52,7 @@ export default function Page() {
         <p>
           Pada Seminar PTN kali ini akan dihadiri oleh 15 Perguruan Tinggi
           Negeri yang ada di indonesia, acara diadakan di Aula SMA
-          Assa&apos;adah untuk bagian SOSHUM dan Aula MA Assa&apos;adah untuk
-          bagian SAINTEK. acara ini akan diisi oleh narasumber dari
+          Assa&apos;adah. acara ini akan diisi oleh narasumber dari
           kampus-kampus tersebut.
         </p>
       </div>
