@@ -11,7 +11,7 @@ export default function Countdown() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const countDownDate = new Date("Jan 25, 2024 07:00:00").getTime();
+      const countDownDate = new Date("Jan 27, 2024 07:00:00").getTime();
       const now = new Date().getTime();
       const distance = countDownDate - now;
 
