@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Agenda from "@/app/ui/rundown/agenda";
 
-const scheduleSaintek = [
+const scheduleDay1 = [
   {
     time: "07.00 - 07.30",
     agenda: "Pembukaan",
@@ -28,32 +28,7 @@ const scheduleSaintek = [
   },
 ];
 
-const scheduleSoshum = [
-  {
-    time: "07.00 - 07.30",
-    agenda: "Pembukaan",
-  },
-  {
-    time: "07.30 - 08.00",
-    agenda: "Universitas Negeri Surabaya",
-  },
-  {
-    time: "08.00 - 09.00",
-    agenda: "Universitas Negeri Semarang",
-  },
-  {
-    time: "09.00 - 10.00",
-    agenda: "Universitas Negeri Malang",
-  },
-  {
-    time: "10.00 - 11.00",
-    agenda: "Universitas Negeri Yogyakarta",
-  },
-  {
-    time: "11.00 - 12.00",
-    agenda: "Institut Teknologi Sepuluh Nopember",
-  },
-];
+
 
 export default function Page() {
   return (
@@ -93,15 +68,8 @@ export default function Page() {
         />
         <div role="tabpanel" className="tab-content">
           <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
-            <Agenda name="Agenda SAINSTEK" data={scheduleSaintek} />
-            <div>
-              <h3 className="text-2xl font-semibold">Location</h3>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1032.7055690347038!2d112.57446812926018!3d-7.053019377690204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77fd20449a2965%3A0xa2e4c68a7da93562!2sMA%20MA&#39;ARIF%20NU%20ASSA&#39;ADAH!5e0!3m2!1sid!2sid!4v1704261782020!5m2!1sid!2sid"
-                loading="lazy"
-                className="md:h-96 h-60 w-full mb-10"
-              ></iframe>
-            </div>
+            <Agenda name="Agenda SAINSTEK" data={scheduleDay1} />
+            
           </div>
         </div>
 
@@ -114,7 +82,7 @@ export default function Page() {
         />
         <div role="tabpanel" className="tab-content">
           <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
-            <Agenda name="Agenda SOSHUM" data={scheduleSoshum} />
+            <Agenda name="Agenda SOSHUM" data={scheduleDay1} />
             <div>
               <h3 className="text-2xl font-semibold">Location</h3>
               <iframe
