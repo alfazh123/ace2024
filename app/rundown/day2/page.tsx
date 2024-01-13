@@ -62,7 +62,7 @@ export default function Page() {
 
         <div className="">
           <div className="my-5 md:grid md:grid-cols-2 flex flex-col-reverse text-left">
-            <Agenda name="Agenda" data={scheduleDay1} />
+            <Agenda name="Agenda" data={scheduleDay2} />
             <div>
               <h3 className="text-2xl font-semibold">Location</h3>
               <iframe
