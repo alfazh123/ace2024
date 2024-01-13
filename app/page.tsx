@@ -62,9 +62,9 @@ export default function Home() {
         </div>
       </header>
 
-      {/* <div className="flex justify-center items-center mt-10">
+      <div className="flex justify-center items-center mt-10">
         <Countdown />
-      </div> */}
+      </div>
 
       <div className="my-20 ">
         <h2 className="text-4xl font-bold">What is ACE</h2>
