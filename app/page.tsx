@@ -12,7 +12,7 @@ const openSans = Open_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 const DataCampusPreview = [
     {
         campusName: "Institut Teknologi Sepuluh Nopember",
-        src: "/campus/its.jpeg",
+        src: "/campus/its.png",
         href: "/campus/Institut-Teknologi-Sepuluh-Nopember",
     },
     {
@@ -22,7 +22,7 @@ const DataCampusPreview = [
     },
     {
         campusName: "Universitas Negri Surabaya",
-        src: "/campus/unesa.jpeg",
+        src: "/campus/unesa.png",
         href: "/campus/Universitas-Negeri-Surabaya",
     },
 ];
@@ -170,11 +170,6 @@ export default function Home() {
                 <h1 className="text-6xl font-bold mb-4">FAQ</h1>
                 <FAQ />
             </div>
-
-            {/* <div>
-        <h2 className="text-2xl font-bold text-center">Our Partner</h2>
-        <Sponsor />
-      </div> */}
         </main>
     );
 }
