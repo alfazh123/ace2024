@@ -17,11 +17,6 @@ const data = [
         href: "/about",
         current: false,
     },
-    {
-        name: "FAQ",
-        href: "/faq",
-        current: false,
-    },
 ];
 
 interface NavbarProps {
