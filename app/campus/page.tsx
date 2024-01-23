@@ -30,7 +30,7 @@ export default async function Blog(
     });
 
     const campus = searchParams?.campus || "";
-    console.log({ search: search });
+    console.log({ search: campus });
 
     return (
         <div>
