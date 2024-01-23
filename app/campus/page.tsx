@@ -1,3 +1,5 @@
+"use server";
+
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
@@ -6,7 +8,7 @@ import Image from "next/image";
 import SelectCampus from "../ui/campus/selectCampus";
 import { useSearchParams } from "next/navigation";
 
-export default function Blog({
+export default async function Blog({
     searchParams,
 }: {
     searchParams?: { campus?: string };
