@@ -7,11 +7,9 @@ import SelectCampus from "../ui/campus/selectCampus";
 import { useSearchParams } from "next/navigation";
 
 export default function Blog({
-    campus,
     searchParams,
 }: {
     searchParams?: { campus?: string };
-    campus: string;
 }) {
     const blogDir = "campus";
 
