@@ -103,27 +103,27 @@ export default async function Blog({
     );
 }
 
-export async function getData() {
-    const blogDir = "campus";
-    const files = fs.readdirSync(path.join(blogDir));
-    const blogs = files.map((filename) => {
-        const fileContent = fs.readFileSync(
-            path.join(blogDir, filename),
-            "utf8"
-        );
-        // Parse the file content here
-        return {
-            filename,
-            content: fileContent,
-        };
-    });
+// export async function getData() {
+//     const blogDir = "campus";
+//     const files = fs.readdirSync(path.join(blogDir));
+//     const blogs = files.map((filename) => {
+//         const fileContent = fs.readFileSync(
+//             path.join(blogDir, filename),
+//             "utf8"
+//         );
+//         // Parse the file content here
+//         return {
+//             filename,
+//             content: fileContent,
+//         };
+//     });
 
-    return {
-        props: {
-            blogs,
-        },
-    };
-}
+//     return {
+//         props: {
+//             blogs,
+//         },
+//     };
+// }
 
 // export async function getStaticProps() {
 //     const blogDir = "campus";
