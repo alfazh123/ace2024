@@ -7,6 +7,7 @@ import path from "path";
 import Image from "next/image";
 import SelectCampus from "../ui/campus/selectCampus";
 import { useSearchParams } from "next/navigation";
+import { error } from "console";
 
 export default async function Blog({
     searchParams,
@@ -37,7 +38,7 @@ export default async function Blog({
         <div>
             <div className={`min-h-screen justify-center flex flex-col`}>
                 <h2 className="text-4xl font-bold mt-32 mb-4">Blog</h2>
-                <SelectCampus name={blogs.map((blog) => blog.meta.title)} />
+                {/* <SelectCampus name={blogs.map((blog) => blog.meta.title)} /> */}
                 {search ? (
                     <div>
                         <div
@@ -101,3 +102,80 @@ export default async function Blog({
         </div>
     );
 }
+
+export async function getData() {
+    const blogDir = "campus";
+    const files = fs.readdirSync(path.join(blogDir));
+    const blogs = files.map((filename) => {
+        const fileContent = fs.readFileSync(
+            path.join(blogDir, filename),
+            "utf8"
+        );
+        // Parse the file content here
+        return {
+            filename,
+            content: fileContent,
+        };
+    });
+
+    return {
+        props: {
+            blogs,
+        },
+    };
+}
+
+// export async function getStaticProps() {
+//     const blogDir = "campus";
+//     const files = fs.readdirSync(path.join(blogDir));
+//     const blogs = files.map((filename) => {
+//         const fileContent = fs.readFileSync(
+//             path.join(blogDir, filename),
+//             "utf8"
+//         );
+//         // Parse the file content here
+//         return {
+//             filename,
+//             content: fileContent,
+//         };
+//     });
+
+//     return {
+//         props: {
+//             blogs,
+//         },
+//     };
+// }
+
+// import fs from "fs";
+// import path from "path";
+// import Link from "next/link";
+// import Image from "next/image";
+// import SelectCampus from "../ui/campus/selectCampus";
+// import { useSearchParams } from "next/navigation";
+
+// export default function Blog({ blogs }) {
+//     // Your component code here
+// }
+
+// export async function getStaticProps() {
+//     const blogDir = "campus";
+//     const files = fs.readdirSync(path.join(blogDir));
+//     const blogs = files.map((filename) => {
+//         const fileContent = fs.readFileSync(
+//             path.join(blogDir, filename),
+//             "utf8"
+//         );
+//         // Parse the file content here
+//         return {
+//             filename,
+//             content: fileContent,
+//         };
+//     });
+
+//     return {
+//         props: {
+//             blogs,
+//         },
+//     };
+// }
