@@ -5,9 +5,6 @@ import matter from "gray-matter";
 import Link from "next/link";
 import path from "path";
 import Image from "next/image";
-import SelectCampus from "../ui/campus/selectCampus";
-import { useSearchParams } from "next/navigation";
-import { error } from "console";
 
 export default async function Blog({
     searchParams,
