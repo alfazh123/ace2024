@@ -6,11 +6,12 @@ import Link from "next/link";
 import path from "path";
 import Image from "next/image";
 
-export default async function Blog({
-    searchParams,
-}: {
-    searchParams?: { campus?: string };
-}) {
+export default async function Blog() {
+// {
+//     searchParams,
+// }: {
+//     searchParams?: { campus?: string };
+// }
     const blogDir = "campus";
 
     const files = fs.readdirSync(path.join(blogDir));
@@ -28,8 +29,8 @@ export default async function Blog({
         };
     });
 
-    const search = searchParams?.campus || "";
-    console.log({ search: search });
+    // const search = searchParams?.campus || "";
+    // console.log({ search: search });
 
     return (
         <div>
