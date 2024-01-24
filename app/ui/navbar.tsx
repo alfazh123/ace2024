@@ -5,17 +5,26 @@ import Image from "next/image";
 import { MdOutlineMenu } from "react-icons/md";
 import { useRouter } from "next/navigation";
 import React, { useState, useCallback } from "react";
+import { FaHome, FaQuestion, FaSchool } from "react-icons/fa";
 
 const data = [
     {
         name: "Home",
         href: "/",
         current: true,
+        label: <FaHome className="text-2xl" />,
     },
     {
         name: "About",
         href: "/about",
         current: false,
+        label: <FaQuestion className="text-2xl" />,
+    },
+    {
+        name: "Campus",
+        href: "/campus",
+        current: false,
+        label: <FaSchool className="text-2xl" />,
     },
 ];
 
@@ -57,17 +66,20 @@ export default function Navbar() {
             </div>
 
             <div
-                className={`py-5 bg-slate-200 w-full px-5 md:hidden bg-ivory ${
+                className={`py-5 bg-slate-200 px-5 md:hidden bg-ivory m-2 rounded-md shadow-md ${
                     isOpen ? "block" : "hidden"
                 }`}
             >
-                <ul className="space-y-4">
+                <ul className="space-y-1">
                     {data.map((item, index) => (
                         <li key={index}>
-                            <Link href={item.href} key={item.name}>
-                                <p className="font-semibold hover:bg-pewter px-3 py-2 rounded-md">
-                                    {item.name}
-                                </p>
+                            <Link
+                                href={item.href}
+                                key={item.name}
+                                className="flex items-center hover:bg-pewter px-2 py-2 rounded-sm space-x-3"
+                            >
+                                <p>{item.label}</p>
+                                <p className="font-semibold">{item.name}</p>
                             </Link>
                         </li>
                     ))}
