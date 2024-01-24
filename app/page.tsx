@@ -83,7 +83,7 @@ export default function Home() {
                 </p>
             </div>
 
-            <div className="justify-center items-center md:pb-20 pb-10 space-y-8 rounded-lg bg-sage">
+            <div className="justify-center items-center md:pb-20 pb-10 space-y-8 rounded-lg bg-ivory">
                 <h2 className="text-2xl font-bold text-center pt-5">Galery</h2>
                 <Galery />
             </div>
@@ -93,7 +93,7 @@ export default function Home() {
                     Kegiatan di ACE 2024
                 </h2>
                 <div className="md:grid md:grid-cols-3 flex flex-col">
-                    <div className="bg-olive p-10">
+                    <div className="bg-olive text-pewter p-10">
                         <h2 className="text-2xl font-bold text-center pb-5">
                             Seminar
                         </h2>
@@ -115,7 +115,7 @@ export default function Home() {
                             mereka
                         </p>
                     </div>
-                    <div className="bg-olive p-10">
+                    <div className="bg-olive text-pewter p-10">
                         <h2 className="text-2xl font-bold text-center pb-5">
                             Seminar
                         </h2>
