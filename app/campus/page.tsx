@@ -5,8 +5,15 @@ import matter from "gray-matter";
 import Link from "next/link";
 import path from "path";
 import Image from "next/image";
+import SelectCampus from "../ui/campus/selectCampus";
 
-export default async function Blog() {
+export default async function Blog({
+    searchParams,
+}: {
+    searchParams: {
+        campus: string;
+    };
+}) {
     const blogDir = "campus";
 
     const files = fs.readdirSync(path.join(blogDir));
@@ -24,11 +31,14 @@ export default async function Blog() {
         };
     });
 
+    console.log(searchParams.campus);
+
     return (
         <div>
-            <div className={`min-h-screen justify-center flex flex-col`}>
+            <div className={`min-h-screen justify-center flex flex-col `}>
                 <h2 className="text-4xl font-bold mt-32 mb-4">Blog</h2>
-                {/* <SelectCampus name={blogs.map((blog) => blog.meta.title)} /> */}
+
+                <SelectCampus name={blogs.map((blog) => blog.meta.title)} />
 
                 <div
                     className={`grid lg:grid-cols-3 md:grid-cols-2 md:gap-4 gap-5 grid-cols-1 m-2 mb-10 `}
@@ -38,7 +48,13 @@ export default async function Blog() {
                             href={`/campus/${blog.slug}`}
                             passHref
                             key={blog.meta.title}
-                            className={`shadow-lg bg-sage hover:shadow-2xl space-y-4 items-center flex flex-col transition duration-300 ease-in-out rounded-lg p-2 w-full`}
+                            className={`shadow-lg bg-sage hover:shadow-2xl space-y-4 items-center flex flex-col transition duration-300 ease-in-out rounded-lg p-2 w-full
+                            ${
+                                searchParams.campus === blog.meta.title
+                                    ? ""
+                                    : "hidden"
+                            }
+                            `}
                         >
                             <Image
                                 src={blog.meta.image}
