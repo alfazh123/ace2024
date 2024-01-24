@@ -11,7 +11,7 @@ export default async function Blog({
     searchParams,
 }: {
     searchParams: {
-        campus: string;
+        query: string;
     };
 }) {
     const blogDir = "campus";
@@ -31,7 +31,7 @@ export default async function Blog({
         };
     });
 
-    console.log(searchParams.campus);
+    console.log(searchParams.query);
 
     return (
         <div>
@@ -50,7 +50,7 @@ export default async function Blog({
                             key={blog.meta.title}
                             className={`shadow-lg bg-sage hover:shadow-2xl space-y-4 items-center flex flex-col transition duration-300 ease-in-out rounded-lg p-2 w-full
                             ${
-                                searchParams.campus === blog.meta.title
+                                searchParams.query === blog.meta.title
                                     ? ""
                                     : "hidden"
                             }

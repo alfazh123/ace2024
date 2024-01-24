@@ -15,9 +15,9 @@ export default function SelectCampus({ name }: selectCampusProps) {
     function handleSearch(term: string) {
         const params = new URLSearchParams(searchParams);
         if (term) {
-            params.set("campus", term);
+            params.set("query", term);
         } else {
-            params.delete("campus");
+            params.delete("query");
         }
         replace(`${pathname}?${params.toString()}`);
     }
