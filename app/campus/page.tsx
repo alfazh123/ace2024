@@ -7,13 +7,14 @@ import path from "path";
 import Image from "next/image";
 import SelectCampus from "../ui/campus/selectCampus";
 
-export default async function Blog({
-    searchParams,
-}: {
-    searchParams: {
-        query: string;
-    };
-}) {
+export default async function Blog() {
+    // {
+    //     searchParams,
+    // }: {
+    //     searchParams: {
+    //         query: string;
+    //     };
+    // }
     const blogDir = "campus";
 
     const files = fs.readdirSync(path.join(blogDir));
@@ -31,7 +32,7 @@ export default async function Blog({
         };
     });
 
-    console.log(searchParams.query);
+    // console.log(searchParams.query);
 
     return (
         <div>
@@ -49,11 +50,7 @@ export default async function Blog({
                             passHref
                             key={blog.meta.title}
                             className={`shadow-lg bg-sage hover:shadow-2xl space-y-4 items-center flex flex-col transition duration-300 ease-in-out rounded-lg p-2 w-full
-                            ${
-                                searchParams.query === blog.meta.title
-                                    ? ""
-                                    : "hidden"
-                            }
+                            
                             `}
                         >
                             <Image
