@@ -52,7 +52,7 @@ export default function Countdown() {
             ) : (
                 <div className="flex flex-col text-center space-y-5">
                     <h1 className="font-bold text-2xl">Countdown Event</h1>
-                    <div className="flex flex-col justify-between bg-sage md:px-10 md:py-4 px-4 py-3 rounded-lg">
+                    <div className="flex flex-col justify-between bg-ivory md:px-10 md:py-4 px-4 py-3 rounded-lg">
                         <div className="flex">
                             {time.map((item, index) => (
                                 <div key={index}>

@@ -47,12 +47,13 @@ export default function Navbar() {
                         width={80}
                         height={80}
                         priority
+                        className="h-16 w-16"
                     />
                 </Link>
                 <div className="md:flex hidden items-center space-x-5 text-slate-900">
                     {data.map((item) => (
                         <Link href={item.href} key={item.name}>
-                            <p className="font-semibold text-lg hover:bg-ivory px-3 py-2 rounded-lg">
+                            <p className="font-semibold text-lg hover:underline px-3 py-2 rounded-lg">
                                 {item.name}
                             </p>
                         </Link>

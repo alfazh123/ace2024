@@ -31,7 +31,7 @@ export default function FAQ() {
             {dataFAQ.map((item, index) => (
                 <details
                     key={index}
-                    className="border-solid border-x-2 border-t-2 last:border-b-2 rounded-md scroll-smooth border-oliver collapse flex flex-col"
+                    className="border-solid border-x-2 border-t-2 last:border-b-2 cursor-pointer rounded-md scroll-smooth border-oliver collapse flex flex-col"
                 >
                     <summary className="md:text-2xl font-semibold bg-slate-100 rounded-lg px-3 py-2">
                         {item.question}
