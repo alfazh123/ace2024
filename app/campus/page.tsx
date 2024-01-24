@@ -7,11 +7,11 @@ import path from "path";
 import Image from "next/image";
 
 export default async function Blog() {
-// {
-//     searchParams,
-// }: {
-//     searchParams?: { campus?: string };
-// }
+    // {
+    //     searchParams,
+    // }: {
+    //     searchParams?: { campus?: string };
+    // }
     const blogDir = "campus";
 
     const files = fs.readdirSync(path.join(blogDir));
