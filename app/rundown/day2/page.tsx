@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Agenda from "@/app/ui/rundown/agenda";
 
 const scheduleDay2 = [
@@ -40,7 +39,7 @@ export default function Page() {
                 ></div>
                 <h1 className="text-6xl font-bold my-5 w-full">Day 2 </h1>
                 <p className="text-lg text-justify">
-                    25 January 2024, 07.00 - 12.00
+                    28 January 2024, 07.00 - selesai
                 </p>
                 <p className="text-lg text-justify">Aula SMA Assa&apos;adah</p>
             </header>
@@ -48,7 +47,7 @@ export default function Page() {
             <div className="my-5 space-y-2">
                 <h3 className="text-3xl font-semibold">Seminar PTS</h3>
                 <p>
-                    Pada Seminar PTS kali ini akan dihadiri oleh 15 Perguruan
+                    Pada Seminar PTS kali ini akan dihadiri oleh 10 Perguruan
                     Tinggi Swasta yang ada di indonesia, acara diadakan di Aula
                     SMA Assa&apos;adah. acara ini akan diisi oleh narasumber
                     dari kampus-kampus tersebut.
