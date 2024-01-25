@@ -67,7 +67,7 @@ export default function Navbar() {
             </div>
 
             <div
-                className={`py-5 bg-slate-200 px-5 md:hidden bg-ivory m-2 rounded-md shadow-md ${
+                className={`py-5 bg-slate-200 px-5 md:hidden bg-pewter m-2 rounded-md shadow-md ${
                     isOpen ? "block" : "hidden"
                 }`}
             >
@@ -77,7 +77,7 @@ export default function Navbar() {
                             <Link
                                 href={item.href}
                                 key={item.name}
-                                className="flex items-center hover:bg-pewter px-2 py-2 rounded-sm space-x-3"
+                                className="flex items-center hover:bg-ivory px-2 py-2 rounded-sm space-x-3"
                             >
                                 <p>{item.label}</p>
                                 <p className="font-semibold">{item.name}</p>
