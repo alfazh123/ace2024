@@ -2,28 +2,76 @@ import Agenda from "@/app/ui/rundown/agenda";
 
 const scheduleDay1 = [
     {
-        time: "07.00 - 07.30",
-        agenda: "Pembukaan",
+        time: "07.30 - 07.35",
+        agenda: "Pembukaan Acara",
     },
     {
-        time: "07.30 - 08.00",
-        agenda: "Universitas Negeri Surabaya",
+        time: "07.35 - 07.45",
+        agenda: "Qira'ah",
     },
     {
-        time: "08.00 - 09.00",
-        agenda: "Universitas Negeri Semarang",
+        time: "07.45 - 07.55",
+        agenda: "Menyanyikan lagu Indonesia raya dan Mars YPPQ",
     },
     {
-        time: "09.00 - 10.00",
-        agenda: "Universitas Negeri Malang",
+        time: "07.55 - 08.00",
+        agenda: "Sambutan ketua pelaksana",
     },
     {
-        time: "10.00 - 11.00",
-        agenda: "Universitas Negeri Yogyakarta",
+        time: "08.00 - 08.10",
+        agenda: "Sambutan kepala sekolah",
     },
     {
-        time: "11.00 - 12.00",
-        agenda: "Institut Teknologi Sepuluh Nopember",
+        time: "08.10 - 08.20",
+        agenda: "Sambutan ketua YPPQ sekaligus grand opening ACE 2024",
+    },
+    {
+        time: "08.20 - 08.25",
+        agenda: "Do'a",
+    },
+    {
+        time: "08.50 - 09.10",
+        agenda: "Presentasi IKBAL Malang",
+    },
+    {
+        time: "09.10 - 09.20",
+        agenda: "Presentasi IKBAL Madura",
+    },
+    {
+        time: "09.20 - 09.35",
+        agenda: "Presentasi IKBAL Jember",
+    },
+    {
+        time: "09.35 - 09.50",
+        agenda: "Presentasi IKBAL Jakarta",
+    },
+    {
+        time: "09.50 - 10.35",
+        agenda: "Ice breaking",
+    },
+    {
+        time: "10.35 - 11.05",
+        agenda: "Presentasi IKBAL Surabaya",
+    },
+    {
+        time: "11.05 - 11.25",
+        agenda: "Presentasi IKBAL Jogja",
+    },
+    {
+        time: "11.25 - 11.35",
+        agenda: "Presentasi IKBAL Kediri",
+    },
+    {
+        time: "11.35 - 11.45",
+        agenda: "Presentasi IKBAL Tulungagung",
+    },
+    {
+        time: "11.45 - 11.55",
+        agenda: "Presentasi IKBAL Semarang",
+    },
+    {
+        time: "11.55 - 12.30",
+        agenda: "Penutupan",
     },
 ];
 
