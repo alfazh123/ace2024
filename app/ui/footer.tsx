@@ -45,10 +45,6 @@ export default function Footer() {
                         <FaSchool className={`mr-2 text-lg`} />
                         Campus
                     </Link>
-                    <Link href="/partner" className="flex">
-                        <FaUserFriends className={`mr-2 text-lg`} />
-                        Partner
-                    </Link>
                 </div>
                 <div>
                     <p className="text-xl font-bold">Alamat</p>
