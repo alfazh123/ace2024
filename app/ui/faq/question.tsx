@@ -17,7 +17,7 @@ const dataFAQ = [
     },
     {
         question: "Dimana lokasi acaranya?",
-        answer: "Lokasinya berada pada Aula SMA Assa'adah.",
+        answer: "Lokasinya berada pada Aula Yayasan Pondok Pesantren Qomaruddin.",
     },
     {
         question: "Untuk Jadwalnya bagaimana?",
