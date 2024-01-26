@@ -41,7 +41,7 @@ export default function Page() {
                 <p className="text-lg text-justify">
                     28 January 2024, 07.00 - selesai
                 </p>
-                <p className="text-lg text-justify">Aula SMA Assa&apos;adah</p>
+                <p className="text-lg text-justify">Aula Yayasan Pondok Pesantren Qomaruddin</p>
             </header>
 
             <div className="my-5 space-y-2">
@@ -49,7 +49,7 @@ export default function Page() {
                 <p>
                     Pada Seminar PTS kali ini akan dihadiri oleh 10 Perguruan
                     Tinggi Swasta yang ada di indonesia, acara diadakan di Aula
-                    SMA Assa&apos;adah. acara ini akan diisi oleh narasumber
+                    Yayasan Pondok Pesantren Qomaruddin. acara ini akan diisi oleh narasumber
                     dari kampus-kampus tersebut.
                 </p>
             </div>
