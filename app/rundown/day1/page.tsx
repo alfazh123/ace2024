@@ -39,7 +39,7 @@ const scheduleDay1 = [
     },
     {
         time: "09.20 - 09.35",
-        agenda: "Presentasi IKBAL Jember",
+        agenda: "Presentasi IKBAL Kediri",
     },
     {
         time: "09.35 - 09.50",
@@ -51,15 +51,15 @@ const scheduleDay1 = [
     },
     {
         time: "10.35 - 11.05",
-        agenda: "Presentasi IKBAL Surabaya",
+        agenda: "Presentasi IKBAL Semarang",
     },
     {
         time: "11.05 - 11.25",
-        agenda: "Presentasi IKBAL Jogja",
+        agenda: "Presentasi IKBAL Jember",
     },
     {
         time: "11.25 - 11.35",
-        agenda: "Presentasi IKBAL Kediri",
+        agenda: "Presentasi IKBAL Jogja",
     },
     {
         time: "11.35 - 11.45",
@@ -67,7 +67,7 @@ const scheduleDay1 = [
     },
     {
         time: "11.45 - 11.55",
-        agenda: "Presentasi IKBAL Semarang",
+        agenda: "Presentasi IKBAL Surabaya",
     },
     {
         time: "11.55 - 12.30",
