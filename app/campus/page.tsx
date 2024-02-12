@@ -13,7 +13,9 @@ type Props = {
     };
 };
 
-export default async function Blog({ searchParams }: Props) {
+export default async function Blog({
+    searchParams,
+}: Props): Promise<JSX.Element> {
     // {
     //     searchParams,
     // }: {
