@@ -6,16 +6,9 @@ import Link from "next/link";
 import path from "path";
 import Image from "next/image";
 import SelectCampus from "../ui/campus/selectCampus";
+import { Select } from "../ui/campus/campus-seelct";
 
-type Props = {
-    searchParams: {
-        query: string;
-    };
-};
-
-export default async function Blog({
-    searchParams,
-}: Props): Promise<JSX.Element> {
+export default async function Blog() {
     // {
     //     searchParams,
     // }: {
@@ -23,6 +16,7 @@ export default async function Blog({
     //         query: string;
     //     };
     // }
+
     const blogDir = "campus";
 
     const files = fs.readdirSync(path.join(blogDir));
@@ -41,15 +35,12 @@ export default async function Blog({
     });
 
     // console.log(searchParams.query);
-
-    console.log(searchParams.query);
-
     return (
         <div>
             <div className={`min-h-screen justify-center flex flex-col `}>
                 <h2 className="text-4xl font-bold mt-32 mb-4">Campus</h2>
 
-                <SelectCampus name={blogs.map((blog) => blog.meta.title)} />
+                {/* <SelectCampus name={blogs.map((blog) => blog.meta.title)} /> */}
 
                 <div
                     className={`grid lg:grid-cols-3 md:grid-cols-2 md:gap-4 gap-5 grid-cols-1 mb-10 `}
@@ -83,6 +74,27 @@ export default async function Blog({
             </div>
         </div>
     );
+}
+
+export async function blogs() {
+    const blogDir = "campus";
+
+    const files = fs.readdirSync(path.join(blogDir));
+
+    const blogs = files.map((filename) => {
+        const fileContent = fs.readFileSync(
+            path.join(blogDir, filename),
+            "utf8"
+        );
+
+        const { data: frontMatter } = matter(fileContent);
+        return {
+            meta: frontMatter,
+            slug: filename.replace(".mdx", ""),
+        };
+    });
+
+    return JSON.stringify(blogs);
 }
 
 // export async function getData() {
