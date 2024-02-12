@@ -7,7 +7,13 @@ import path from "path";
 import Image from "next/image";
 import SelectCampus from "../ui/campus/selectCampus";
 
-export default async function Blog() {
+type Props = {
+    searchParams: {
+        query: string;
+    };
+};
+
+export default async function Blog({ searchParams }: Props) {
     // {
     //     searchParams,
     // }: {
@@ -34,12 +40,14 @@ export default async function Blog() {
 
     // console.log(searchParams.query);
 
+    console.log(searchParams.query);
+
     return (
         <div>
             <div className={`min-h-screen justify-center flex flex-col `}>
                 <h2 className="text-4xl font-bold mt-32 mb-4">Campus</h2>
 
-                {/* <SelectCampus name={blogs.map((blog) => blog.meta.title)} /> */}
+                <SelectCampus name={blogs.map((blog) => blog.meta.title)} />
 
                 <div
                     className={`grid lg:grid-cols-3 md:grid-cols-2 md:gap-4 gap-5 grid-cols-1 mb-10 `}
